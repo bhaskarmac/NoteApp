@@ -1,0 +1,19 @@
+{
+  "name": "notesapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhaskarmac/NotesApp.git"
+  },
+  "author": "Bhaskar Machcha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhaskarmac/NotesApp/issues"
+  },
+  "homepage": "https://github.com/bhaskarmac/NotesApp#readme"
+}
