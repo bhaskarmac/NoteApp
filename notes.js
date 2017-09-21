@@ -8,9 +8,13 @@ var addNote = (title, body) => {
     title,
     body
   };
-  
-  var notesString = fs.readFileSync('notes-data.json');
-  notes = JSON.parse(notesString);
+
+  try {
+    var notesString = fs.readFileSync('notes-data.json');
+    notes = JSON.parse(notesString);
+  } catch (e) {
+
+  }
 
   notes.push(note);
   fs.writeFileSync('notes-data.json', JSON.stringify(notes));
