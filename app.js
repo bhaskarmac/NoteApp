@@ -4,6 +4,7 @@ const fs = require('fs');
 const _ = require('lodash');
 const yargs = require('yargs');
 
+
 const notes = require('./notes.js');
 const argv = yargs.argv;
 
@@ -25,7 +26,9 @@ if(command === 'add'){
   console.log('reading note');
   notes.getNote(argv.title);
 } else if (command === 'remove') {
-  notes.removeNote(argv.title);
+  var noteRemoved = notes.removeNote(argv.title);
+  var message = noteRemoved ? 'Note was removed!' : 'Note not found!';
+  console.log(message);
 } else {
   console.log('command not recognised');
 }
